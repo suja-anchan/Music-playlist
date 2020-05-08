@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Albums</title>
+        <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../static/d_albums.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand active" href="/second">Home</a>
+              </div> 
+      
+             
+          </nav>
+        <div class="container">
+        <table  id="pop" align="center">
+
+            <tr>
+    
+                <th>Album Name</th>
+    
+                <th>Release Date</th>
+    
+                <th>Total tracks</th>
+    
+                <th>Genre</th>
+    
+               
+            </tr>
+            
+  
+            {% for row in data %}
+    
+                <tr>   
+    
+                {% for d in row %}
+                
+                     <td>{{d}}</td>
+<!-- 
+                    {% if loop.index == 1 %}
+                        <td><input type="checkbox" id="album" name="album"
+                            value="{{d}}">
+                            <label for="album">   {{d}}</label> 
+                        </td>
+                     {% else %}    -->
+
+                    
+                   
+                    <!-- {% endif %} -->
+                 {% endfor %}
+                       
+    
+                </tr>
+    
+            {% endfor %}
+
+            
+
+            
+     
+        </table>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+body{
+    background-color: ivory;
+    background-size: cover;
+    background-attachment: scroll;
+}
+  
+
+
+table{
+    border-collapse: collapse;
+    background: transparent;
+
+    
+}
+    th{
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-right: 10px;
+        padding-left: 8px;
+        font-size: 30px;
+        font-family: 'Acme', sans-serif;
+        background-color: rgb(65,62,65);
+        color:rgb(218, 120, 55);
+        border-bottom: 1px solid rgb(61, 59, 59)
+    }
+    
+    td {
+        padding-left: 17px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #fff;
+        font-size: 20px;
+        background-color: rgb(65,62,65);
+         
+        font-family: 'Acme', sans-serif;
+        
+        border-bottom: 1px solid rgb(61,59,59);
+    }
+
+    tr:hover { background-color: rgb(223, 213, 209);
+
+    }
+    input{
+        padding-top: 2%;
+        padding-right: 15%;
+        padding-left: 15%;
+        padding-bottom: 2%;
+         background-color: rgb(65,62,65) ;
+         font-family: 'Acme', sans-serif;
+         font-weight: bold;
+         color:rgb(218, 120, 55) ;
+    }

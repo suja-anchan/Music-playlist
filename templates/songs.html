@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Albums</title>
+         
+        <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../static/songs.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand active" href="/second">Home</a>
+              </div> 
+      
+             
+          </nav>
+           <form method="POST">
+        <div class="container">
+        <table  id="pop" align="center">
+
+            <tr>
+    
+                <th>Songs</th>
+                <th>Share Link</th>
+    
+               
+    
+               
+            </tr>
+            
+  
+            {% for row in data %}
+    
+                <tr>   
+    
+                     {% for d in row %}
+                        {% if loop.index==2 %}
+                        <td><a href="{{d}}">{{d}}</a> </td>
+
+                        {% else %}
+
+                        {% if loop.index==1 %}
+                         <td><input type="checkbox" value="{{d}}"  id="play" name="play">
+                        <label for="play">{{d}}</label></td>
+                          
+                            
+                         {% else %}
+
+                                <td>{{d}}</td>
+
+                         {% endif %}       
+                        {% endif %} 
+
+                {% endfor %}
+                       
+    
+                </tr>
+    
+            {% endfor %}
+
+            
+
+            
+     
+        </table>
+        <br><br><br>
+        
+    
+</form>
+<div align="center">
+    <input type="submit" id="submit" value="Remove from playlist">
+
+</div>
+</div>
+    </body>
+</html>
